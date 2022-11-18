@@ -104,7 +104,7 @@ sprites.space.spaceAsteroid1,
 sprites.space.spaceAsteroid4,
 sprites.space.spaceAsteroid3
 ]
-ship = sprites.create(sprites.castle.skellyAttackFront1, SpriteKind.Player)
+ship = sprites.create(sprites.kaiju.kaijuBabyLarge, SpriteKind.Player)
 ship.setStayInScreen(true)
 ship.bottom = 120
 controller.moveSprite(ship, 100, 100)
