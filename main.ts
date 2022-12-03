@@ -21,7 +21,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         2 2 2 2 2 2 2 2 
         `, ship, 0, -140)
     projectile.startEffect(effects.fountain, 100)
-    music.playSoundEffect(music.createSoundEffect(WaveShape.Square, 5000, 1238, 186, 0, 250, SoundExpressionEffect.Warble, InterpolationCurve.Logarithmic), SoundExpressionPlayMode.UntilDone)
+    music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 5000, 1, 0, 255, 100, SoundExpressionEffect.Vibrato, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
 })
 info.onCountdownEnd(function () {
     C49_Bomb = sprites.createProjectileFromSprite(img`
@@ -144,7 +144,7 @@ game.setDialogFrame(img`
 game.setDialogTextColor(8)
 game.showLongText("Welcome Space Cadet, your job is avoid the astroids click B to deploy c49 bombs , use these sparingly you only get one every 10 seconds but you can deploy bullets at will using A. ", DialogLayout.Full)
 game.splash(game.askForNumber("What is your Favorite #?", 1), "The above number is your space agent # ")
-ship = sprites.create(sprites.kaiju.kaijuBabyLarge, SpriteKind.Player)
+ship = sprites.create(sprites.duck.duck3, SpriteKind.Player)
 ship.setStayInScreen(true)
 ship.bottom = 120
 controller.moveSprite(ship, 100, 100)
